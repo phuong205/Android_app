@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCE9DE"> <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbarGioHang"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#CCE9DE"
+    app:titleTextColor="#EF0606"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:title="Giỏ Hàng Của Bạn" />
+
+    <ListView
+        android:id="@+id/listViewGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:padding="8dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F4110B"
+        android:alpha="0.2"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#CCE9DE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng cộng: "
+                android:textSize="18sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:id="@+id/textViewTongTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Đ"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#601d1b" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonThanhToan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THANH TOÁN"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#CCE9DE"
+            android:backgroundTint="#F60F08"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/buttonTiepTucMua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mua sắm tiếp nhé"
+            android:textSize="16sp"
+            android:textColor="#F60F08"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </LinearLayout>
+
+</LinearLayout>

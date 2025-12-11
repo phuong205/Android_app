@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8FDF5"
+    tools:context="activity.MainActivity">
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarmanhinhchinh"
+                android:background="#D2E7E6"
+                app:title="Myshose"
+                app:titleTextColor="#F60707"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fdf8e8"
+                app:tabTextColor="#F60707"
+                app:tabSelectedTextColor="#F60707"
+                app:tabIndicatorColor="#601d1b">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabNewProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sản phẩm mới nhất" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tabHotProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sản phẩm bán chạy" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:background="#fdf8e8"
+            android:layout_width="300dp"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listviewmanhinhchinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

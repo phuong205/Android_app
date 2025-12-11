@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBEBD5"
+    android:padding="30dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký Tài Khoản Mới"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0F0E0E"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextRegUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên đăng nhập / Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:backgroundTint="#601d1b"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:backgroundTint="#601d1b"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextRegTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và Tên"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:backgroundTint="#601d1b"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextRegSdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:backgroundTint="#601d1b"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/buttonRegDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#0F0E0E"
+        android:padding="12dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/buttonRegHuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HỦY / QUAY LẠI"
+        android:textSize="16sp"
+        android:textColor="#ED0909"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:padding="12dp"/>
+
+</LinearLayout>
